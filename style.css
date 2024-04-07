@@ -244,6 +244,10 @@ span{
     top: 1rem;
     cursor: pointer;
 }
+.about  .btn{
+    margin-top: 2rem;
+}
+
 .heading{
     text-align: center;
     font-size: 8rem;
@@ -292,7 +296,7 @@ span{
     margin-bottom: 5rem;
     color:black;
  }
- preojects-container{
+ .projects-container{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     align-items: center;
@@ -300,10 +304,12 @@ span{
  }
  .projects-box{
     border: 3px solid var(--main-color);
-    height: 300px;
+    height: 370px;
     border-radius: 1em;
     cursor: pointer;
     transition: 0.3s ease;
+   
+    
  }
  .projects-box:hover{
     background:var(--main-color);
@@ -318,5 +324,201 @@ span{
     align-items: baseline;
     padding: 5rem;
  }
+ .projects-info h4{
+    font-size: 36px;
+    font-weight: 500;
+ }
 
+ .projects-info p{
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+ }
+ .contact{
+    background-color: var(--second-bg-color);
+
+ }
+ .contact h2{
+    margin-bottom: 3rem;
+    color: black;
+
+ }
+ .contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+ }
+ .contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .contact form .input-box input,
+ .contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color:var(--bg-color);
+    border-radius: 0.8rem;
+    border:2px solid  var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+ }
+
+ .contact form .btn{
+    margin-top: 2rem;
+ }
  
+ .footer{
+    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--main-color);
+
+ }
+ .footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+
+ }
+ .footer .social a{
+    font-size: 25px;
+    color: white;
+    border: 2px solid white;
+    width:42px;
+    height: 42px; 
+    line-height: 42px;
+    display: inline-block;
+    text-align:center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid white;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+@media(max-width:1285px){
+    html{
+        font-size: 55%;
+
+    }
+    .projects-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+    .home p{
+        width: 700px;
+    }
+    .home img{
+        width: 32vw;
+    }
+}
+@media(max-width:991px){
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding:2rem 3%;
+    }
+}
+@media(max-width:895px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: white;
+        border-bottom: 1px solid rgba(255,255,255, 0.4);
+        display: none;
+    }
+    .navbar .active{
+        display: block;
+
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: black;
+    }
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home p{
+        width: 500px;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about-content{
+        margin: 0 2rem 4rem ;
+    }
+    .about img{
+        width: 64vw;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .projects h2{
+        margin-bottom: 3rem;
+    }
+    .projects-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+    
+
+
